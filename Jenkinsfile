@@ -15,15 +15,6 @@ pipeline{
                 git url: 'https://github.com/franciskinyuru/gallery.git', branch: 'master'
             }
         }
-
-        stage('checkout to test branch'){
-            steps{
-               sh '''
-               git checkout test
-               '''            
-
-            }
-        }
           stage('install depedencies'){
             steps{
                sh '''
