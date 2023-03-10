@@ -8,7 +8,7 @@
 
 March, 2023
 
-## website/Live Site
+## Live Site
 live website is availabe [here]()
 ## Project Description
 The project entails deploying the gallery project to render via Jenkins pipeline.
