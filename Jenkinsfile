@@ -76,4 +76,4 @@ pipeline{
                 subject: "Status: FAILURE -Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'", 
                 to: 'franciskinyuru26@gmail.com'
         }
-}
+}}
