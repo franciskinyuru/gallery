@@ -18,6 +18,7 @@ pipeline{
           stage('install depedencies'){
             steps{
                sh '''
+               git checkout test
                npm install
                '''            
 
