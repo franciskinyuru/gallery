@@ -10,6 +10,7 @@ config.mongoURI = {
 module.exports = config;
 
 
-
+// for prod use ${{ secrets.MONGO_USERNAME }}:${{ secrets.MONGO_PASSWORD }} 
+// for UAT use ${process.env.username}:${process.env.password}
 
 
