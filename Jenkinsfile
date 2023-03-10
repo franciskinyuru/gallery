@@ -5,7 +5,7 @@ pipeline{
     }
     
     stages{
-        stage('Start'){
+        stage('Start'){gi
             steps{
                 echo 'build has started'
             }
