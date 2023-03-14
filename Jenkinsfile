@@ -47,7 +47,7 @@ pipeline{
             emailext body: 'Test Message',
     recipientProviders: [developers(), requestor()],
     subject: 'Test Subject',
-    to: 'franciskinyuru26@gmail.com'
+    to: 'waruikinyuru@gmail.com'
         }
 
 }
