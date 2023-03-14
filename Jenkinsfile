@@ -39,7 +39,7 @@ pipeline{
     }
     post {
 
-        always{
+        success{
               slackSend channel: 'test-slack-integration-to-jenkins',  color: '#c0c0c0', message: "Repo: ${env.JOB_NAME} - BuildNo: ${env.BUILD_NUMBER} - live site: ${Live_Site}"
         }
 
