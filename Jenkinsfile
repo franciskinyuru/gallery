@@ -44,7 +44,7 @@ pipeline{
         }
 
         always {
-            emailext body: 'Test Message',
+            emailext body: 'Tests Message',
     recipientProviders: [developers(), requestor()],
     subject: 'Test Subject',
     to: 'waruikinyuru@gmail.com'
