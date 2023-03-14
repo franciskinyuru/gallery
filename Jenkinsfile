@@ -51,6 +51,6 @@ pipeline{
                       <p><i>(Build log is attached.)</i></p>
                     """,
                 subject: "Status: FAILURE -Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'", 
-                to: 'franciskinyuru26@gmail.com'
+                to: 'kinyuruwarui@gmail.com'
         }
 }}
