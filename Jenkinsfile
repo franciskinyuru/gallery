@@ -42,7 +42,7 @@ pipeline{
 
 
         always{
-            slackSend( channel: "#U03UKPARA9L", token: "slack_webhook token", color: "good", message: "Test Email")
+            slackSend( channel: "#U03UKPARA9L", token: "slack_webhook token", color: "good", message: "Test Pipeline Notifications")
         },
         
         failure {
