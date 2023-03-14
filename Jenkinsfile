@@ -28,7 +28,6 @@ pipeline{
                sh 'npm test'
             }
         }
-        
         stage('end'){
             steps{
                 sh '''
