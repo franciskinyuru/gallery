@@ -23,14 +23,11 @@ pipeline{
 
             }
         }
-        // stage('run tests'){
-        //     steps{
-        //        sh '''
-        //        npm run test
-        //        '''            
-
-        //     }
-        // }
+        stage('run tests'){
+            steps{
+               sh 'npm test'
+            }
+        }
         
         stage('end'){
             steps{
@@ -44,7 +41,7 @@ pipeline{
     post {
 
         always{
-              slackSend channel: 'test-slack-integration-to-jenkins',  color: '#c0c0c0', message: "${env.JOB_NAME} - ${env.BUILD_NUMBER} live site ${Live_Site}"
+              slackSend channel: 'test-slack-integration-to-jenkins',  color: '#c0c0c0', message: "Repo: ${env.JOB_NAME} - BuildNo: ${env.BUILD_NUMBER} - live site: ${Live_Site}"
         }
 
 }

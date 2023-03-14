@@ -15,7 +15,7 @@ const app = express();
 // connecting the database
 let mongodb_url = 'mongodb://localhost:27017/';
 let dbName = 'darkroom';
-mongoose.connect(`${config.mongoURI.production}`,{ useNewUrlParser: true , useUnifiedTopology: true }, (err)=>{
+mongoose.connect(`${config.mongoURI.test}`,{ useNewUrlParser: true , useUnifiedTopology: true }, (err)=>{
     if (err) console.log(err)
 });
 
