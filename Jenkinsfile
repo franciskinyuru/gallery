@@ -39,6 +39,12 @@ pipeline{
         }
     }
     post {
+
+
+        always{
+            slackSend( channel: "#U03UKPARA9L", token: "slack_webhook token", color: "good", message: "Test Email")
+        },
+        
         failure {
             emailext attachLog: true, 
                 body:
@@ -53,4 +59,7 @@ pipeline{
                 subject: "Status: FAILURE -Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'", 
                 to: 'kinyuruwarui@gmail.com'
         }
-}}
+
+}
+
+}
