@@ -44,9 +44,7 @@ pipeline{
     post {
 
         always{
-
-            slackSend color: '#404040', failOnError: true, iconEmoji: '♦️', message: 'Hello Warui', notifyCommitters: true, teamDomain: 'Test', username: 'jenkins'
-            slackSend  color: 'good', message: "Destroy Applied ${env.JOB_NAME} - ${env.BUILD_NUMBER} live site ${Live_Site}"
+              slackSend  color: 'good', message: "Destroy Applied ${env.JOB_NAME} - ${env.BUILD_NUMBER} live site ${Live_Site}"
         }
 
 }
