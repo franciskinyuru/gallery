@@ -44,7 +44,7 @@ pipeline{
     post {
 
         always{
-            slackSend channel: '#test-slack-integration-to-jenkins', color: 'good', message: "Destroy Applied ${env.JOB_NAME} - ${env.BUILD_NUMBER}", teamDomain: 'https://jenkinstestshq.slack.com', tokenCredentialId: 'ngsWlV84bSkzWA7flvU7E4IR'
+            slackSend channel: '#test-slack-integration-to-jenkins', color: 'good', message: "Destroy Applied ${env.JOB_NAME} - ${env.BUILD_NUMBER}", teamDomain: 'https://jenkinstestshq.slack.com', token: 'ngsWlV84bSkzWA7flvU7E4IR'
         }
 
 }
