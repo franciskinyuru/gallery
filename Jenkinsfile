@@ -44,7 +44,7 @@ pipeline{
     post {
 
         always{
-              slackSend  color: 'good', message: "Destroy Applied ${env.JOB_NAME} - ${env.BUILD_NUMBER} live site ${Live_Site}"
+              slackSend channel: 'test-slack-integration-to-jenkins'  color: 'good', message: "${env.JOB_NAME} - ${env.BUILD_NUMBER} live site ${Live_Site}"
         }
 
 }
