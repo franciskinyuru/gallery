@@ -40,9 +40,8 @@ pipeline{
     }
     post {
 
-
         always{
-            slackSend( channel: "#U03UKPARA9L", token: "slack_webhook token", color: "good", message: "Test Pipeline Notifications")
+            slackSend( channel: "#test-slack-integration-to-jenkins", token: "ngsWlV84bSkzWA7flvU7E4IR", color: "good", message: "Test Pipeline Notifications")
         }
 
 }
