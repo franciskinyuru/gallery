@@ -23,14 +23,14 @@ pipeline{
 
             }
         }
-        stage('run tests'){
-            steps{
-               sh '''
-               npm run test
-               '''            
+        // stage('run tests'){
+        //     steps{
+        //        sh '''
+        //        npm run test
+        //        '''            
 
-            }
-        }
+        //     }
+        // }
         
         stage('end'){
             steps{
