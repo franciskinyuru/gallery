@@ -31,7 +31,7 @@ pipeline{
         stage('end of build'){
             steps{
                 sh '''
-                echo "end of build"
+                echo "end build"
 
                 '''
             }
