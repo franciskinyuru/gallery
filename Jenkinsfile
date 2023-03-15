@@ -10,7 +10,7 @@ pipeline{
                 echo 'build has started'
             }
         }
-        stage('clone repository'){
+        stage('clone repository from github'){
             steps{
                 git url: 'https://github.com/franciskinyuru/gallery.git', branch: 'master'
             }
