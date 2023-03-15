@@ -40,11 +40,11 @@ pipeline{
     post {
 
         success{
-              slackSend channel: 'test-slack-integration-to-jenkins',  color: '#c0c0c0', message: "Repo: ${env.JOB_NAME} - BuildNo: ${env.BUILD_NUMBER} - live site: ${Live_Site}"
+              slackSend channel: 'test-slack-integration-to-jenkins',  color: '#c0c0c0', message: "Repo: ${env.JOB_NAME} - BuildNo: ${env.BUILD_NUMBER} - live site: ${env.Live_Site}"
         }
 
         always {
-            emailext body: "RepoName: ${env.JOB_NAME} - BuildNo: ${env.BUILD_NUMBER} - live site: ${Live_Site}",
+            emailext body: "RepoName: ${env.JOB_NAME} - BuildNo: ${env.BUILD_NUMBER} - live site: ${env.Live_Site}",
     recipientProviders: [developers(), requestor()],
     subject: 'Test Subject',
     to: 'waruikinyuru@gmail.com'
