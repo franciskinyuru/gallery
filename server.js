@@ -17,8 +17,7 @@ let mongodb_url = 'mongodb://localhost:27017/';
 let dbName = 'darkroom';
 mongoose.connect(`${config.mongoURI.production}`,{ useNewUrlParser: true , useUnifiedTopology: true }, (err)=>{
     if (err) console.log(err)
-});
-
+});``
 // test if the database has connected successfully
 // let db = mongoose.connection;
 // db.once('open', ()=>{
