@@ -15,7 +15,7 @@ pipeline{
                 git url: 'https://github.com/franciskinyuru/gallery.git', branch: 'master'
             }
         }
-          stage('install depedencies'){
+          stage('install dependencies'){
             steps{
                sh '''
                npm install
