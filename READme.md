@@ -1,6 +1,6 @@
 # Project Name
 
-## Gallery
+### Gallery
 
 #### Contributors
 
